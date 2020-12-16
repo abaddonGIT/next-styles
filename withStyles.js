@@ -223,7 +223,7 @@ const getStyleLoaders = (
   const postcssLoader = getPostcssLoader(config, postcssLoaderOptions)
 
   const cssLoader = {
-    loader: isServer ? "css-loader/locals" : "css-loader",
+    loader: "css-loader",
     options: {
       sourceMap: dev,
       importLoaders: loaders.length + (postcssLoader ? 1 : 0),
